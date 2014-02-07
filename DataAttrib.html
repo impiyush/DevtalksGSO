@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Data Attributes</title>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+</head>  
+<body>
+
+<p data-id="123">Test Value</p>
+<button id="btnGetVals" onclick="getVals();">Check</button><br>
+Note:Check the output in the Console
+
+<script>
+function getVals(){
+var temp = document.querySelector('p');
+console.log('The ID is (Through JS):', temp.dataset['id']);
+
+temp.dataset['id'] = 100;
+
+var el=document.getElementsByTagName('p');
+console.log('The ID is (Through jQuery):'+$(el).data('id'));
+}
+</script>
+</body>
+</html>
+
+
