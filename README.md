@@ -1,4 +1,4 @@
-DevtalksGSO
+DevtalksGSO Examples
 ===========
 
-code examples which I took in devtalks at greensboro
+code examples presented at DevTalksGSO at Greensboro
